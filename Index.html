@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Data Services</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Mobile Data Services</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="content">
+      <h2>Welcome to Mobile Data Services</h2>
+      <p>Get fast and reliable mobile data for all your internet needs.</p>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="content">
+      <h2>Our Data Plans</h2>
+      <div class="plan">
+        <h3>Basic Plan</h3>
+        <p>1GB Data</p>
+        <p>$10/month</p>
+        <button>Select Plan</button>
+      </div>
+      <div class="plan">
+        <h3>Standard Plan</h3>
+        <p>5GB Data</p>
+        <p>$25/month</p>
+        <button>Select Plan</button>
+      </div>
+      <div class="plan">
+        <h3>Premium Plan</h3>
+        <p>10GB Data</p>
+        <p>$40/month</p>
+        <button>Select Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to contact us:</p>
+      <p>Email: info@mobiledata.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+  </section>
+
+  <form id="paymentForm">
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email-address" required />
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="tel" id="amount" required />
+    </div>
+    <div class="form-group">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" />
+    </div>
+    <div class="form-group">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" />
+    </div>
+    <div class="form-submit">
+      <button type="submit" onclick="payWithPaystack()"> Pay </button>
+    </div>
+  </form>
+  
+    <footer>
+    <p>&copy; 2023 Mobile Data Services. All rights reserved.</p>
+  </footer>
+</body>
+
+<script src="/script.js"></script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+</html>
